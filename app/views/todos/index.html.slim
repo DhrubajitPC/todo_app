@@ -1,0 +1,15 @@
+title Todo App
+
+.container
+  .row
+    .span4
+      h1 Todo App
+
+      hr
+
+      p All Your Todos here
+      .well
+        - @todo_items.each do |t|
+            li= t.todo_item
+
+=link_to 'Delete Last Todo', todos_delete_path

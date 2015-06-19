@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title Todo App
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+
+
+  body
+    .navbar.navbar-inverse
+      .navbar-inner.container
+        a.navbar-brand href="#"
+          i.glyphicon.glyphicon-ok
+          | Just Did It
+
+    = yield
+/    .navbar
+/    .navbar-default
+/      .navbar-fixed-top
+/        .navbar-inner
+/          .container
+/            a.navbar-brand href="#"
+/              i.glyphicon.glyphicon-ok
+/              | Just Did It
+/    = yield
+/
+/
+/
+/<div class="navbar navbar-inverse navbar-fixed-top">
+/  <div class = "navbar-inner">
+/    <div class = "container">
+/      <a class="brand" href = "#"><i class="icon-ok"></i>Just Did It</a></p>
+/      </div>
+/    </div>
+/  <div>
